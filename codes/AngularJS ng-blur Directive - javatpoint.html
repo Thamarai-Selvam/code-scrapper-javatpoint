@@ -1,0 +1,14 @@
+<!--www.javatpoint.com-->
+<!--AngularJS ng-blur Directive - javatpoint-->
+<!--Syntax-->
+<!--<element ng-blur="expression"></element>-->
+<!--Code-->
+
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="">
+<input ng-blur="count = count + 1" ng-init="count=0"/>
+<h1>{{count}}</h1>
+<p>By default, the value is 0 but it will increase the value of the variable "count" every time when the input field loses focus.</p>
+</body>
+</html>

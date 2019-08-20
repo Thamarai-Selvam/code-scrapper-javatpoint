@@ -1,0 +1,17 @@
+<!--www.javatpoint.com-->
+<!--AngularJS ng-keypress Directive - javatpoint-->
+<!--Syntax-->
+<!--
+&ltelement ng-keypress="expression"></element>
+-->
+<!--Code-->
+
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body ng-app="">
+<p>Press any key within the input box.</p>
+<input ng-init="count=0" ng-keydown="count = count + 1"/>
+<h1>{{count}}</h1>
+<p>Every time you press a key in the input field, this will increase the value of the variable "count".</p>
+</body>
+</html>

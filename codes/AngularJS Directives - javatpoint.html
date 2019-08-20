@@ -1,0 +1,67 @@
+<!--www.javatpoint.com-->
+<!--AngularJS Directives - javatpoint-->
+<!--Syntax-->
+<!--<div ng-app="">
+   ...
+</div>-->
+<!--Code-->
+
+<div ng-app="" ng-init="countries = [{locale:'en-IND',name:'India'}, {locale:'en-PAK',name:'Pakistan'}, {locale:'en-AUS',name:'Australia'}]">
+   ...
+</div><!--Code-->
+
+<div ng-app="">
+   ...
+   <p>Enter your Name: <input ng-model="name" type="text"/></p>
+</div><!--Code-->
+
+<div ng-app="">
+   ...
+   <p>List of Countries with locale:</p>
+   
+   <ol>
+      <li ng-repeat="country in countries">
+         {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+      </li>
+   </ol>
+
+
+</div><!--Code-->
+
+<html>
+<head>
+      <title>AngularJS Directives</title>
+</head>
+<body>
+      <h1>Sample Application</h1>
+      
+      <div ng-app="" ng-init="countries = [{locale:'en-IND',name:'India'}, {locale:'en-PAK',name:'Pakistan'}, {locale:'en-AUS',name:'Australia'}]"> 
+         <p>Enter your Name: <input ng-model="name" type="text"/></p>
+         <p>Hello <span ng-bind="name"></span>!</p>
+         <p>List of Countries with locale:</p>
+      
+         <ol>
+            <li ng-repeat="country in countries">
+               {{ 'Country: ' + country.name + ', Locale: ' + country.locale }}
+            </li>
+         </ol>
+      </div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+</body>
+</html><!--Code-->
+
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<body>
+
+<div ng-app="myApp" w3-test-directive=""></div>
+<script>
+var app = angular.module("myApp", []);
+app.directive("w3TestDirective", function() {
+    return {
+        template : "This is a directive constructor. "
+    };
+});
+</script>
+</body>
+</html>
