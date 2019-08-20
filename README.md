@@ -21,7 +21,7 @@ Example :
 
 	```python main.py "https://www.javatpoint.com/angularjs-ng-keypress-directive"```
 
-	The fetched code will be saved in the same name as that of the page title under the same directory as well.
+     The fetched code will be saved in the same name as that of the page title under the same directory as well.
 
 
 
