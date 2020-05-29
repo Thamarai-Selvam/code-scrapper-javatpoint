@@ -26,4 +26,4 @@ The fetched code will be saved in the same name as that of the page title under 
 
 
 
-*Some examples can be found under ```codes``` directory.*
+*Some examples can be found under [```codes```](codes/) directory.*
